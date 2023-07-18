@@ -12,9 +12,9 @@ body {
 .title {
   color: mintcream;
   text-transform: uppercase;
-  margin-top: 3em;
-  margin-bottom: 3em;
-  font-size: 1em;
+  margin-top: 2em;
+  margin-bottom: 2em;
+  font-size: 2em;
   letter-spacing: 0.3em;
 }
 
@@ -22,21 +22,23 @@ body {
   display: flex;
   flex-direction: column;
 }
-.keyboard .row {
+
+.row {
   list-style: none;
   display: flex;
 }
-.keyboard .row li {
+
+li {
   height: 3em;
   width: 3em;
   color: rgba(0, 0, 0, 0.7);
-  border-radius: 0.4em;
+  border-radius: 0.6em;
   line-height: 3em;
-  letter-spacing: 1px;
   margin: 0.4em;
   transition: 0.3s;
   text-align: center;
   font-size: 1em;
+  font-weight: 800;
 }
 
 #tab {
@@ -64,7 +66,7 @@ body {
 }
 
 .pinky {
-  background-color: crimson;
+  background-color: rgb(220, 20, 140);
   border: 2px solid crimson;
 }
 
@@ -73,7 +75,7 @@ body {
 }
 
 .ring {
-  background-color: coral;
+  background-color: rgb(255, 141, 80);
   border: 2px solid coral;
 }
 
@@ -100,7 +102,7 @@ body {
 }
 
 .pointer2nd {
-  background-color: khaki;
+  background-color: rgb(63, 79, 170);
   border: 2px solid khaki;
 }
 

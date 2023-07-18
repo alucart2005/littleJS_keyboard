@@ -10,7 +10,7 @@ function getRandomKey() {
   return keys[getRandomNumber(0,keys.length-1)];
 }
 
-function getRandomKey() {
+function targetRandomKey() {
   const key = document.getElementById(getRandomKey());
   key.classList.add("selected");
 }
@@ -18,10 +18,16 @@ function getRandomKey() {
 document.addEventListener("keyup", event => {
   const keyPressed = String.fromCharCode(event.keyCode);  //key
   const keyElement = document.getElementById(keyPressed);
-  const highLigthKey = document.querySelector(".selected");
+  const highLightedKey = document.querySelector(".selected");
   keyElement.classList.add("hit");
   keyElement.addEventListener('animationend', () => {
     keyElement.classList.remove("hit")
-    })
+  })
+  if (keyPressed === highLightedKey.innerHTML){
+    highLightedKey.classList.remove("selected")
+    targetRandomKey();
+  }
   } 
 )
+
+targetRandomKey()
